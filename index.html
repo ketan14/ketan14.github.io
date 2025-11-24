@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ketan Vaghela | Senior Frontend Architect</title>
+    <meta name="description" content="Portfolio of Ketan Vaghela, a Senior Software Developer with 12+ years of experience in Angular, React, and UI Architecture.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#f0fdfa',
+                            100: '#ccfbf1',
+                            400: '#2dd4bf', // Teal accent
+                            500: '#14b8a6',
+                            900: '#0f172a', // Deep slate background
+                            950: '#020617', // Darker footer
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        /* Custom Utilities for subtle glows */
+        .glow-blob {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(45, 212, 191, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+            border-radius: 50%;
+            z-index: -1;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-brand-900 text-slate-300 antialiased selection:bg-brand-400 selection:text-brand-950">
+
+    <nav class="fixed w-full z-50 bg-brand-900/80 backdrop-blur-md border-b border-slate-800 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="#" class="font-display font-bold text-2xl text-white tracking-tight">KV<span class="text-brand-400">.</span></a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#about" class="hover:text-brand-400 transition-colors px-3 py-2 text-sm font-medium">About</a>
+                        <a href="#skills" class="hover:text-brand-400 transition-colors px-3 py-2 text-sm font-medium">Skills</a>
+                        <a href="#experience" class="hover:text-brand-400 transition-colors px-3 py-2 text-sm font-medium">Experience</a>
+                        <a href="#projects" class="hover:text-brand-400 transition-colors px-3 py-2 text-sm font-medium">Projects</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="mailto:vaghela.ketan@gmail.com" class="bg-brand-400 hover:bg-brand-500 text-brand-950 font-semibold px-5 py-2.5 rounded-full transition-all text-sm transform hover:scale-105">
+                        Let's Talk
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+        <div class="glow-blob top-0 left-1/4"></div>
+        <div class="glow-blob bottom-0 right-1/4"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="max-w-4xl">
+                <p class="text-brand-400 font-medium mb-4 tracking-wide uppercase text-sm">Frontend Architect & UI Developer</p>
+                <h1 class="text-5xl md:text-7xl font-display font-bold text-white tracking-tight mb-8 leading-tight">
+                    Building human-centered products with 
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-cyan-200">clarity & scale.</span>
+                </h1>
+                <p class="text-xl text-slate-400 mb-10 max-w-2xl leading-relaxed">
+                    I am an Ahmedabad-based Senior Developer with <strong class="text-slate-200">12 years of experience</strong> blending Angular, React, and Design Systems to craft high-performance enterprise applications.
+                </p>
+                
+                <div class="flex flex-wrap gap-4">
+                    <a href="#projects" class="border border-brand-400 text-brand-400 hover:bg-brand-400 hover:text-brand-950 font-medium px-8 py-3 rounded-lg transition-all">
+                        View Work
+                    </a>
+                    <a href="#experience" class="text-slate-300 hover:text-white px-8 py-3 font-medium transition-colors flex items-center gap-2">
+                        View Resume <span aria-hidden="true">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-20 pt-10 border-t border-slate-800">
+                <div>
+                    <div class="text-3xl font-display font-bold text-white mb-1">12+</div>
+                    <div class="text-sm text-slate-500">Years Experience</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-display font-bold text-white mb-1">40+</div>
+                    <div class="text-sm text-slate-500">Projects Shipped</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-display font-bold text-white mb-1">WCAG</div>
+                    <div class="text-sm text-slate-500">Accessibility Standard</div>
+                </div>
+                <div>
+                    <div class="text-3xl font-display font-bold text-white mb-1">20%</div>
+                    <div class="text-sm text-slate-500">Efficiency Gain w/ AI</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="skills" class="py-20 bg-slate-900/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-3xl font-display font-bold text-white mb-4">Technical Toolbox</h2>
+                <div class="h-1 w-20 bg-brand-400 rounded"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 hover:border-brand-400/50 transition-colors group">
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-brand-400 transition-colors">Core Frontend</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        React.js, Angular (v2+), AngularJS, TypeScript, JavaScript (ES6+), HTML5, CSS3
+                    </p>
+                </div>
+                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 hover:border-brand-400/50 transition-colors group">
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-brand-400 transition-colors">UI & Design</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Figma, Adobe XD, Sketch, Zeplin, Wireframing, Responsive Design, Accessibility (a11y)
+                    </p>
+                </div>
+                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 hover:border-brand-400/50 transition-colors group">
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-brand-400 transition-colors">Architecture</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Component-Based Architecture, State Management (Redux/NgRx), Micro-frontends, RESTful APIs
+                    </p>
+                </div>
+                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 hover:border-brand-400/50 transition-colors group">
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-brand-400 transition-colors">DevOps & Tools</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Git, Jira, Confluence, VS Code, GitHub Copilot, CI/CD Pipelines
+                    </p>
+                </div>
+                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 hover:border-brand-400/50 transition-colors group">
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-brand-400 transition-colors">Mobile / Backend</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Ionic Framework, Node.js, Adaptive Layouts
+                    </p>
+                </div>
+                <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 hover:border-brand-400/50 transition-colors group">
+                    <h3 class="text-xl font-bold text-white mb-3 group-hover:text-brand-400 transition-colors">Testing & QA</h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        Unit Testing, Component Testing, Accessibility Audits, Usability Testing
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:justify-between md:items-end mb-12">
+                <div>
+                    <h2 class="text-3xl font-display font-bold text-white mb-4">Experience Journey</h2>
+                    <div class="h-1 w-20 bg-brand-400 rounded"></div>
+                </div>
+                <div class="mt-4 md:mt-0">
+                    <a href="https://linkedin.com" target="_blank" class="text-brand-400 hover:text-white transition-colors text-sm font-medium">View LinkedIn Profile &rarr;</a>
+                </div>
+            </div>
+
+            <div class="relative border-l border-slate-700 ml-3 md:ml-6 space-y-12">
+                
+                <div class="relative pl-8 md:pl-12">
+                    <span class="absolute -left-[5px] top-2 h-3 w-3 rounded-full bg-brand-400 ring-4 ring-brand-900"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">Software Developer</h3>
+                        <span class="text-sm text-brand-400 font-mono bg-brand-900/50 px-2 py-1 rounded mt-1 sm:mt-0">NTT DATA | Apr 2024 - Present</span>
+                    </div>
+                    <ul class="list-disc list-outside ml-4 text-slate-400 space-y-2 marker:text-brand-400">
+                        <li>Designed user-centric interfaces focusing on accessibility and responsiveness.</li>
+                        <li>Established scalable design pipelines to streamline workflows from concept to deployment.</li>
+                        <li>Created high-fidelity mockups using Figma and Adobe XD.</li>
+                    </ul>
+                </div>
+
+                <div class="relative pl-8 md:pl-12">
+                    <span class="absolute -left-[5px] top-2 h-3 w-3 rounded-full bg-slate-600 ring-4 ring-brand-900"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">Software Development Engineer</h3>
+                        <span class="text-sm text-slate-400 font-mono bg-slate-800/50 px-2 py-1 rounded mt-1 sm:mt-0">NTT Cloud Communication | 2022 - 2024</span>
+                    </div>
+                    <ul class="list-disc list-outside ml-4 text-slate-400 space-y-2 marker:text-slate-600">
+                        <li>Steered frontend development ensuring adherence to coding standards.</li>
+                        <li>Focused on client-side optimization and performance tuning.</li>
+                        <li>Led design reviews and sprint planning sessions.</li>
+                    </ul>
+                </div>
+
+                <div class="relative pl-8 md:pl-12">
+                    <span class="absolute -left-[5px] top-2 h-3 w-3 rounded-full bg-slate-600 ring-4 ring-brand-900"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">Senior Software Engineer</h3>
+                        <span class="text-sm text-slate-400 font-mono bg-slate-800/50 px-2 py-1 rounded mt-1 sm:mt-0">Cygnet Infotech | 2013 - 2022</span>
+                    </div>
+                    <ul class="list-disc list-outside ml-4 text-slate-400 space-y-2 marker:text-slate-600">
+                        <li>Managed task assignments and sprint execution for large web projects.</li>
+                        <li>Built reusable code libraries for future scalability.</li>
+                        <li>Ensured full mobile responsiveness and brand consistency.</li>
+                    </ul>
+                </div>
+
+                 <div class="relative pl-8 md:pl-12">
+                    <span class="absolute -left-[5px] top-2 h-3 w-3 rounded-full bg-slate-600 ring-4 ring-brand-900"></span>
+                    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
+                        <h3 class="text-xl font-bold text-white">Junior Developer</h3>
+                        <span class="text-sm text-slate-400 font-mono bg-slate-800/50 px-2 py-1 rounded mt-1 sm:mt-0">Creative Solution Services | 2012 - 2013</span>
+                    </div>
+                    <p class="text-slate-400">Developed responsive applications using JavaScript/jQuery and created wireframe architecture maps.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-20 bg-slate-800/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-3xl font-display font-bold text-white mb-4">Featured Work</h2>
+                <div class="h-1 w-20 bg-brand-400 rounded"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-brand-950 rounded-xl overflow-hidden border border-slate-800 flex flex-col h-full">
+                    <div class="p-6 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-white">Unified UI Kit</h3>
+                            <span class="bg-green-500/10 text-green-400 text-xs px-2 py-1 rounded border border-green-500/20">Active</span>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-6">
+                            Architected a reusable component library covering 40+ patterns, reducing build time by 35% and ensuring WCAG 2.1 AA compliance.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-2 py-1 bg-slate-800 text-xs text-slate-300 rounded">React</span>
+                            <span class="px-2 py-1 bg-slate-800 text-xs text-slate-300 rounded">TypeScript</span>
+                            <span class="px-2 py-1 bg-slate-800 text-xs text-slate-300 rounded">Storybook</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-brand-950 rounded-xl overflow-hidden border border-slate-800 flex flex-col h-full">
+                    <div class="p-6 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-white">CX Insights Dashboard</h3>
+                            <span class="bg-blue-500/10 text-blue-400 text-xs px-2 py-1 rounded border border-blue-500/20">Completed</span>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-6">
+                            Improved dashboard load times by 42% via code-splitting. Delivered role-based layouts driving +18% engagement.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-2 py-1 bg-slate-800 text-xs text-slate-300 rounded">Angular</span>
+                            <span class="px-2 py-1 bg-slate-800 text-xs text-slate-300 rounded">NgRx</span>
+                            <span class="px-2 py-1 bg-slate-800 text-xs text-slate-300 rounded">Highcharts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-brand-950 rounded-xl overflow-hidden border border-slate-800 flex flex-col h-full">
+                    <div class="p-6 flex-grow">
+                        <div class="flex justify-between items-start mb-4">
+                            <h3 class="text-xl font-bold text-white">Omnichannel Portal</h3>
+                            <span class="bg-purple-500/10 text-purple-400 text-xs px-2 py-1 rounded border border-purple-500/20">Refactor</span>
+                        </div>
+                        <p class="text-slate-400 text-sm mb-6">
+                            Led incremental refactor from AngularJS to Angular, achieving 25% faster deployments and 30% bug reduction.
+                        </p>
+                        <div class="flex flex-wrap gap-2 mt-auto">
+                            <span class="px-2 py-1 bg-slate-800 text-xs text-slate-300 rounded">Ionic</span>
+                            <span class="px-2 py-1 bg-slate-800 text-xs text-slate-300 rounded">Sass</span>
+                            <span class="px-2 py-1 bg-slate-800 text-xs text-slate-300 rounded">Jasmine</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-brand-950 border-t border-slate-900 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0">
+                <span class="font-display font-bold text-2xl text-white">KV.</span>
+                <p class="text-slate-500 text-sm mt-1">© <span id="year">2024</span> Ketan Vaghela</p>
+            </div>
+            
+            <div class="flex flex-col md:items-end gap-4">
+                <h3 class="text-white font-medium">Ready to build something remarkable?</h3>
+                <div class="flex gap-4">
+                    <a href="mailto:vaghela.ketan@gmail.com" class="text-slate-400 hover:text-brand-400 transition-colors text-sm">vaghela.ketan@gmail.com</a>
+                    <span class="text-slate-700">|</span>
+                    <a href="tel:+919724474288" class="text-slate-400 hover:text-brand-400 transition-colors text-sm">(+91) 9724474288</a>
+                    <span class="text-slate-700">|</span>
+                    <span class="text-slate-400 text-sm">Ahmedabad, India</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
